@@ -1,7 +1,7 @@
-// this uploads an image to the CNN algorithm
 const uploadImage = async (req, res) => {
     const { image } = req.body;
-    res.send('This is I, Jio');
+    
+    res.send('Image sent successfully!');
 }
 
 module.exports = {

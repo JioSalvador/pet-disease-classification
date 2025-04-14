@@ -1,3 +1,6 @@
+const tf = require('@tensorflow/tfjs');
+const fs = require('fs');
+const path = require('path');
 
 const { db } = require('./controller/lib/firebase.js');
 
@@ -32,3 +35,21 @@ app.use("/api", classifyImage)
 app.listen(PORT, ()=> {
     console.log(`Server is running on port: ${PORT}`);
 })
+
+app.use('/model', express.static(path.join(__dirname, 'AnimalSkinDiseasePrediction_CNN-main', 'model', 'tfjs')));
+
+async function loadModel() {
+    try {
+      const model = await tf.loadLayersModel('http://localhost:3000/model/model.json'); 
+  
+      console.log('Model loaded successfully!');
+    } catch (error) {
+      console.error('Error loading the model:', error);
+    }
+  }
+
+const imagePath = path.join(__dirname, 'AnimalSkinDiseasePrediction_CNN-main', 'src', 'Validation', 'Fungal', '26.jpg');
+
+console.log('Image path:', imagePath);
+
+loadModel();
