@@ -10,3 +10,5 @@ Open two terminals and run both client and server. The device must be connected 
 
 Note: Go to /client/services/petProfileServices.js and on line 1, put your IP address.
 Do this by going to command prompt, typing ipconfig, and copy pasting your IPV4 address onto this code 'http://<insertyourip>:3000/pet-profiles'.
+
+Firebase credentials also seems to have broken after syncing in github. To use the application, create your own database and connect all details/credentials under controller/lib. Finally, generate a key and rename it to "serviceaccountkey" and replace the one in the folder.
