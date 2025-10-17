@@ -15,9 +15,9 @@ const howToData = [
     image: { uri: 'https://cdn.shopify.com/s/files/1/0035/1984/0325/files/Welchcorgipembroke_1024x1024.jpg?v=1655987017' },
   },
   {
-    title: 'Set reminders',
-    description: 'Never miss deworming, vaccination, or check-ups.',
-    image: { uri: 'https://nativepet.com/cdn/shop/articles/Shih-Tzu-lying-on-a-couch.jpg?v=1664966861&width=1000' },
+    title: 'Find veterinarian',
+    description: 'Locate nearby veterinary clinics and animal hospitals in your area.',
+    image: { uri: 'https://www.toorakrdvetclinic.com.au/wp-content/uploads/2023/08/Challenges-Faced-by-Veterinarian-Practices.jpg' },
   },
 ];
 

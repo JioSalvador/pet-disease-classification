@@ -2,12 +2,12 @@ import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import React from 'react';
 import { useRouter } from 'expo-router';
 
-/*This is just temporary*/
+
 const healthData = [
   { title: 'Ringworms', image: { uri: 'https://kb.rspca.org.au/wp-content/uploads/2018/11/fungal-lesion-cat-ear.jpg' } },
   { title: 'Dermatitis', image: { uri: 'https://cennutrition.com.au/wp-content/uploads/2021/07/Dermatitis-in-dogs.jpg' } },
-  { title: 'Healthy Skin', image: { uri: 'https://spotpet.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fm5ehn3s5t7ec%2Fwp-image-198451%2Fc336adb8a86da6dca45d4136436d13ec%2FWhy-Does-Dog-Fur-Change-Colors.webp&w=3840&q=75' } },
-  { title: 'Hypersensitivity', image: { uri: 'https://veteriankey.com/wp-content/uploads/2016/09/B9781416056638000070_f007-043-9781416056638.jpg' } },
+  { title: 'Scabies', image: { uri: 'https://media.istockphoto.com/id/1481423640/photo/scabies.jpg?s=612x612&w=0&k=20&c=Sxa_4RnsUAkitY9ngk2EKKU8xlDhi6E8q5MiUnKYAGM=' } },
+  { title: 'Fungal Infection', image: { uri: 'https://images.ctfassets.net/nx3pzsky0bc9/7McSDzd7haIqPCVZf8rV85/0b291d385fc759111a3e7c8da50a79a7/Untitled_design-43.jpg?w=804' } },
 ];
 
 const HealthCheckHistory = () => {
@@ -16,10 +16,7 @@ const HealthCheckHistory = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>Health check history</Text>
-        <TouchableOpacity>
-          <Text style={styles.viewAll}>View all</Text>
-        </TouchableOpacity>
+        <Text style={styles.title}>Common skin diseases in the philippines</Text>
       </View>
 
       <View style={styles.grid}>

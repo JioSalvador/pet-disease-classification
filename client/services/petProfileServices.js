@@ -1,4 +1,4 @@
-const BASE_URL = 'http://<insertyourip>:3000/pet-profiles'; // go to command prompt > type ipconfig > get your ipv4 address
+const BASE_URL = 'http://192.168.100.174:3000/pet-profiles'; // go to command prompt > type ipconfig > get your ipv4 address
 
 export async function createPetProfile(petData) {
   const response = await fetch(`${BASE_URL}/pets`, {

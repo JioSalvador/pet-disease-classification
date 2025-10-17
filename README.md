@@ -2,6 +2,9 @@ ComPAWnion Application
 
 Includes image classification algorithm for animal skin diseases. Additionally, a function to track your pets' information through pet profile creation.
 
+For frontend dependencies:
+in the terminal, change directory to client 'cd client' then use 'npm install --legacy-peer-deps' to download dependencies.
+
 For backend dependencies:
 in the terminal, change directory to server 'cd server' then use 'npm install' to download dependencies.
 
